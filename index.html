@@ -239,6 +239,26 @@ body>*{position:relative;z-index:1}
 @keyframes geoIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:760px){.geo-visual{margin:30px 0 42px;padding:16px 14px}.geo-topline{font-size:7px}.geo-map{height:310px}.geo-us{left:2%;top:24%}.geo-china{right:2%;top:24%}.geo-brazil{left:50%;top:58%;transform:translateX(-50%)}.geo-node{min-width:0}.geo-node strong{font-size:16px}.geo-node small{font-size:8px}.geo-node-kicker{font-size:7px}.geo-chain-steps{grid-template-columns:1fr 15px 1fr 15px 1fr;gap:4px}.geo-chain-steps b{font-size:12px}.geo-chain-steps small{font-size:8px}.geo-map-note{font-size:7px;padding:0 8px}.geo-hint{font-size:7px}}
 
+
+/* Créditos visuais e acabamento minimalista do infográfico geopolítico */
+.geo-visual{background:#fff;border:1px solid #eee3e3;color:#202124;box-shadow:0 10px 30px rgba(60,0,0,.035)}
+.geo-topline{border-color:#eee3e3;color:#777;font-size:9px}
+.geo-map{background:linear-gradient(180deg,#fff 0%,#fbf8f8 100%)}
+.geo-node-kicker,.geo-node small{color:#777}
+.geo-node strong{color:#202124}
+.geo-brazil strong{color:#b51f2b}
+.geo-map-note{color:#888}
+.geo-chain{border-color:#eee3e3}
+.geo-chain-label,.geo-chain-steps small{color:#777}
+.geo-chain-steps b{color:#202124}
+.geo-chain-steps span{color:#b51f2b}
+.geo-pop{background:#fff8f7;border:1px solid #f0dddd;border-left:3px solid #b51f2b;color:#202124}
+.geo-pop p{color:#555!important}
+.geo-hint{color:#777}
+.geo-caption,.chart-credit{max-width:1100px;margin:-48px auto 58px;padding:0 2px;color:#777;font:10px/1.65 var(--mono)}
+.chart-credit{margin:-18px auto 42px}
+.mineral-art figcaption{color:#777}
+@media(max-width:760px){.geo-caption{margin:-30px 0 42px;font-size:9px}.chart-credit{margin:-8px 0 32px;font-size:9px}}
 </style>
 </head>
 <body>
@@ -271,6 +291,7 @@ body>*{position:relative;z-index:1}
   <div class="geo-pop" id="geo-pop" role="status" aria-live="polite"><span class="geo-pop-label">DADO EM DESTAQUE</span><button class="geo-pop-close" type="button" aria-label="Fechar dado">×</button><strong id="geo-pop-title">Explore os pontos do mapa</strong><p id="geo-pop-text">Selecione um dos sinais + para ver os números e informações apurados pela reportagem.</p></div>
   <div class="geo-hint">SELECIONE OS PONTOS <span>+</span> PARA EXPLORAR OS DADOS</div>
 </div>
+<div class="geo-caption">Ilustração geopolítica gerada por inteligência artificial, com dados e informações de apuração autoral da reportagem.</div>
 <div class="article-grid"><article class="prose">
 <p>A China concentra a maior parte do processamento global desses elementos e passou a usar restrições e licenças de exportação como instrumento nas negociações com os Estados Unidos, expondo a vulnerabilidade de cadeias industriais dependentes de insumos chineses.</p>
 <p>Na avaliação do doutorando em Teoria Econômica no Instituto de Economia da Universidade Estadual de Campinas (Unicamp), Iago Montalvão, a pressão pesou nas tratativas bilaterais e levou a recuos de Washington, ao mesmo tempo em que impulsionou a busca norte-americana por rotas alternativas de abastecimento.</p>
@@ -298,7 +319,9 @@ body>*{position:relative;z-index:1}
 <div class="chart-wrap"><div class="chart-top"><div><div class="chart-label">Visualização 01 · Comércio exterior</div><div class="chart-title">A virada nas exportações brasileiras de terras raras</div><div class="chart-sub">Após pico puxado por estoque em 2025, embarques despencam em 2026 e a China desaparece da lista de destinos de compostos</div></div><div class="chart-label">Volume total exportado</div></div>
 <div class="bars"><div class="bar-col"><div class="bar-value">60,9 t</div><div class="bar" style="height:9%"></div><div class="bar-year">2024</div></div><div class="bar-col"><div class="bar-value">679,8 t</div><div class="bar" style="height:100%"></div><div class="bar-year">2025 · alta de 11x com venda de estoque</div></div><div class="bar-col"><div class="bar-value">56,2 t</div><div class="bar" style="height:8.3%"></div><div class="bar-year">2026* · janeiro a outubro</div></div></div>
 <div class="chart-foot">* Dados de 2026 parciais até outubro. Considera compostos de terras raras (NCM 2846, exceto 2846.90.30). Fonte: Comex Stat / MDIC.</div></div>
+<div class="chart-credit">Gráfico de elaboração autoral da reportagem, com dados do Comex Stat / MDIC.</div>
 <div class="split-chart"><div class="data-card"><h3>2025 · China concentra as compras</h3><p>Participação no peso exportado</p><div class="destination"><span>China</span><div class="track"><div class="fill" style="width:99.7%"></div></div><b>99,7%</b></div><p>677,9 toneladas</p></div><div class="data-card"><h3>2026* · Novos destinos assumem</h3><p>Participação no peso exportado</p><div class="destination"><span>EUA</span><div class="track"><div class="fill" style="width:39.2%"></div></div><b>39,2%</b></div><div class="destination"><span>Estônia</span><div class="track"><div class="fill" style="width:37.1%"></div></div><b>37,1%</b></div><div class="destination"><span>Canadá</span><div class="track"><div class="fill" style="width:17.7%"></div></div><b>17,7%</b></div><div class="destination"><span>Outros</span><div class="track"><div class="fill" style="width:6%"></div></div><b>6,0%</b></div></div></div>
+<div class="chart-credit">Gráficos de elaboração autoral da reportagem, a partir dos dados de comércio exterior do Comex Stat / MDIC.</div>
 <div class="article-grid"><article class="prose">
 <p>O período coincide com a entrada de recursos ligados ao governo americano. Em janeiro, foi assinado o financiamento de até US$565 milhões concedido à Serra Verde pela U.S. International Development Finance Corporation (DFC), agência de fomento de Washington. Os dados não permitem afirmar que uma coisa causou a outra.</p>
 <div class="response-box">
@@ -343,7 +366,7 @@ body>*{position:relative;z-index:1}
     <details class="mineral-pop pop-center"><summary>Dy · Disprósio</summary><div class="pop-content">Adicionado a ímãs de alto desempenho para manter a força magnética em temperaturas elevadas.</div></details>
     <details class="mineral-pop pop-right"><summary>Pr · Praseodímio</summary><div class="pop-content">Usado em ligas magnéticas e em aplicações industriais de alta tecnologia.</div></details>
   </div>
-  <figcaption>Ilustração editorial · Cristais estilizados e elementos que integram a cadeia das terras raras. Selecione cada etiqueta para saber mais.</figcaption>
+  <figcaption>Ilustração de cristais gerada por inteligência artificial, com informações e dados de apuração autoral da reportagem. Selecione cada etiqueta para saber mais.</figcaption>
 </figure>
 <div class="article-grid"><article class="prose">
 <p>As ligas metálicas e os ímãs permanentes, usados em motores elétricos, turbinas eólicas, equipamentos médicos e dispositivos eletrônicos, são importados já prontos.</p>
