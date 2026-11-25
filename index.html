@@ -204,6 +204,41 @@ body>*{position:relative;z-index:1}
   .prose .response-box p,.prose p.statement-note{font-size:14.5px}
   .prose p.statement-note{padding:17px 18px}
 }
+
+/* Infográfico geopolítico interativo */
+.geo-visual{max-width:1100px;margin:42px auto 64px;padding:22px 24px 18px;background:#202722;border:1px solid #414940;color:#f2f0e8;position:relative}
+.geo-topline{display:flex;justify-content:space-between;gap:12px;padding-bottom:13px;border-bottom:1px solid #485148;font:9px var(--mono);letter-spacing:.14em;color:#c7cbbf}
+.geo-map{height:340px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,#303a31 0,#202722 68%)}
+.geo-lines{position:absolute;inset:0;width:100%;height:100%}
+.geo-node{position:absolute;z-index:1;display:flex;flex-direction:column;gap:5px;min-width:150px}
+.geo-node-kicker{font:8px var(--mono);letter-spacing:.13em;color:#aeb5a8}
+.geo-node strong{font:500 clamp(17px,2vw,22px) var(--serif);color:#f3f0e8}
+.geo-node small{font:10px var(--mono);color:#c1c6bb}
+.geo-us{left:9%;top:30%}.geo-brazil{left:43%;top:55%;align-items:center;text-align:center}.geo-china{right:8%;top:30%;align-items:flex-end;text-align:right}
+.geo-brazil strong{color:#f05a54}
+.geo-pin{width:28px;height:28px;border:1px solid #c62828;border-radius:50%;background:#c62828;color:white;font:18px/1 Arial;cursor:pointer;margin-top:5px;transition:transform .2s,background .2s}
+.geo-pin:hover,.geo-pin[aria-expanded=true]{transform:scale(1.12);background:#f04b45}
+.geo-map-note{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#92998d;font:9px var(--mono);letter-spacing:.04em}
+.geo-chain{border-top:1px solid #485148;padding:18px 0 10px}
+.geo-chain-label{font:9px var(--mono);letter-spacing:.13em;color:#b9c0b3;margin-bottom:16px}
+.geo-chain-steps{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr;align-items:center;gap:8px}
+.geo-chain-steps>div{display:flex;flex-direction:column;gap:5px}
+.geo-chain-steps span{font:9px var(--mono);color:#e34a43}
+.geo-chain-steps b{font:500 15px var(--serif);color:#f2f0e8}
+.geo-chain-steps small{font:9px var(--mono);color:#aeb5a8}
+.geo-chain-steps i{height:1px;background:#c62828;position:relative}
+.geo-chain-steps i:after{content:"";position:absolute;right:0;top:-3px;width:6px;height:6px;border-top:1px solid #c62828;border-right:1px solid #c62828;transform:rotate(45deg)}
+.geo-pop{display:none;position:relative;margin:12px 0 0;padding:15px 42px 14px 17px;background:#f6f2e9;color:#242820;border-left:3px solid #c62828}
+.geo-pop.is-open{display:block;animation:geoIn .2s ease-out}
+.geo-pop-label{font:8px var(--mono);letter-spacing:.14em;color:#a51e29}
+.geo-pop strong{display:block;margin:5px 0 3px;font:600 19px var(--serif)}
+.geo-pop p{margin:0!important;font:12px/1.65 var(--sans)!important;color:#555!important}
+.geo-pop-close{position:absolute;right:12px;top:10px;border:0;background:none;color:#444;font-size:22px;cursor:pointer}
+.geo-hint{margin-top:12px;text-align:right;font:8px var(--mono);letter-spacing:.1em;color:#9da598}
+.geo-hint span{display:inline-grid;place-items:center;margin-left:4px;width:15px;height:15px;border-radius:50%;background:#c62828;color:white;font-size:12px}
+@keyframes geoIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.geo-visual{margin:30px 0 42px;padding:16px 14px}.geo-topline{font-size:7px}.geo-map{height:310px}.geo-us{left:2%;top:24%}.geo-china{right:2%;top:24%}.geo-brazil{left:50%;top:58%;transform:translateX(-50%)}.geo-node{min-width:0}.geo-node strong{font-size:16px}.geo-node small{font-size:8px}.geo-node-kicker{font-size:7px}.geo-chain-steps{grid-template-columns:1fr 15px 1fr 15px 1fr;gap:4px}.geo-chain-steps b{font-size:12px}.geo-chain-steps small{font-size:8px}.geo-map-note{font-size:7px;padding:0 8px}.geo-hint{font-size:7px}}
+
 </style>
 </head>
 <body>
@@ -214,6 +249,28 @@ body>*{position:relative;z-index:1}
 <section class="intro"><p class="drop">Dono da segunda maior reserva mundial de terras raras, o Brasil ocupa uma posição paradoxal na corrida global pelos minerais usados em carros elétricos, turbinas eólicas, defesa e eletrônicos. O país exporta compostos de baixo valor agregado e importa os ímãs permanentes já prontos, enquanto entra no centro da disputa entre China e Estados Unidos pelo controle das cadeias de suprimento.</p><p>Com mais de 3 mil processos minerários ativos espalhados por 23 estados, quase todos ainda em fase de pesquisa, a expansão do setor pressiona o governo e a indústria a responder a uma mesma pergunta: se o país conseguirá internalizar o refino e a fabricação de componentes de alto valor sob a nova política nacional sancionada em setembro, ou se repetirá o ciclo histórico do minério de ferro, exportando matéria-prima bruta e absorvendo no território os passivos ambientais da extração.</p></section>
 <section class="section dark"><div class="section-head"><div class="section-no">01 / GEOPOLÍTICA</div><div><h2 class="two-line-title">Entre Pequim e Washington:<br>a posição brasileira na disputa global</h2><p class="section-deck">A disputa por terras raras deixou de ser apenas comercial e passou a operar como alavanca diplomática e industrial entre potências.</p></div></div>
 
+<div class="geo-visual" aria-label="Infográfico interativo sobre a disputa geopolítica das terras raras">
+  <div class="geo-topline"><span>O TABULEIRO GLOBAL</span><span>TRÊS POLOS · UMA CADEIA ESTRATÉGICA</span></div>
+  <div class="geo-map">
+    <svg class="geo-lines" viewBox="0 0 1000 390" preserveAspectRatio="none" aria-hidden="true">
+      <defs><pattern id="geoDots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#aaa69b" opacity=".32"/></pattern></defs>
+      <rect width="1000" height="390" fill="url(#geoDots)"/>
+      <path d="M500 18 C390 90 360 230 500 370 M500 18 C610 90 640 230 500 370 M60 195 H940" fill="none" stroke="#77786f" stroke-width="1" opacity=".25"/>
+      <path d="M500 195 Q310 80 180 142 M500 195 Q700 75 820 142" fill="none" stroke="#c62828" stroke-width="2.2" stroke-dasharray="5 7"/>
+      <path d="M500 195 Q650 280 820 142 M500 195 Q340 285 180 142" fill="none" stroke="#c62828" stroke-width="1" opacity=".45"/>
+    </svg>
+    <div class="geo-node geo-us"><span class="geo-node-kicker">AMÉRICA DO NORTE</span><strong>Estados Unidos</strong><small>Busca por novas fontes</small><button class="geo-pin" data-geo="us" aria-label="Ver dado sobre o financiamento americano" aria-expanded="false">+</button></div>
+    <div class="geo-node geo-brazil"><span class="geo-node-kicker">AMÉRICA DO SUL</span><strong>Brasil</strong><small>Reservas e potencial mineral</small><button class="geo-pin" data-geo="br" aria-label="Ver dado sobre as reservas brasileiras" aria-expanded="false">+</button></div>
+    <div class="geo-node geo-china"><span class="geo-node-kicker">ÁSIA</span><strong>China</strong><small>Domínio das etapas industriais</small><button class="geo-pin" data-geo="cn" aria-label="Ver dados sobre o refino e os ímãs na China" aria-expanded="false">+</button></div>
+    <div class="geo-map-note">Conexões conceituais da disputa por abastecimento, tecnologia e processamento.</div>
+  </div>
+  <div class="geo-chain">
+    <div class="geo-chain-label">ONDE ESTÁ O VALOR NA CADEIA?</div>
+    <div class="geo-chain-steps"><div><span>01</span><b>Extração</b><small>Minério no subsolo</small></div><i></i><div><span>02</span><b>Separação e refino</b><small>Concentração industrial</small></div><i></i><div><span>03</span><b>Ímãs permanentes</b><small>Componente de alto valor</small></div></div>
+  </div>
+  <div class="geo-pop" id="geo-pop" role="status" aria-live="polite"><span class="geo-pop-label">DADO EM DESTAQUE</span><button class="geo-pop-close" type="button" aria-label="Fechar dado">×</button><strong id="geo-pop-title">Explore os pontos do mapa</strong><p id="geo-pop-text">Selecione um dos sinais + para ver os números e informações apurados pela reportagem.</p></div>
+  <div class="geo-hint">SELECIONE OS PONTOS <span>+</span> PARA EXPLORAR OS DADOS</div>
+</div>
 <div class="article-grid"><article class="prose">
 <p>A China concentra a maior parte do processamento global desses elementos e passou a usar restrições e licenças de exportação como instrumento nas negociações com os Estados Unidos, expondo a vulnerabilidade de cadeias industriais dependentes de insumos chineses.</p>
 <p>Na avaliação do doutorando em Teoria Econômica no Instituto de Economia da Universidade Estadual de Campinas (Unicamp), Iago Montalvão, a pressão pesou nas tratativas bilaterais e levou a recuos de Washington, ao mesmo tempo em que impulsionou a busca norte-americana por rotas alternativas de abastecimento.</p>
@@ -304,7 +361,20 @@ body>*{position:relative;z-index:1}
 <p>A maior parte da atividade ainda está na fase de pesquisa. Segundo a Agência Nacional de Mineração (ANM), em consulta de 22 de novembro de 2026, o país tinha 3.060 processos minerários ativos para terras raras e minerais associados (3.138 áreas, já que alguns processos têm mais de uma), em 23 estados, 97% deles em requerimento ou autorização de pesquisa. Bahia (1.040), Goiás (590) e Minas Gerais (517) concentram cerca de 70% do total.</p>
 <div class="map-frame">
   <div class="flourish-embed flourish-map" data-src="visualisation/31024738" aria-label="Mapa interativo de processos minerários de terras raras no Brasil">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <script src="https://public.flourish.studio/resources/embed.js">
+const geoData={
+  us:{title:'US$ 565 milhões',text:'Financiamento de até esse valor concedido à Serra Verde pela U.S. International Development Finance Corporation (DFC), agência de fomento do governo americano. O dado indica a dimensão do interesse financeiro dos EUA na cadeia brasileira.'},
+  br:{title:'Brasil: segunda maior reserva mundial',text:'O país reúne a segunda maior reserva mundial de terras raras. O desafio destacado pela reportagem é transformar essa disponibilidade geológica em capacidade de separação, refino e fabricação de componentes no território nacional.'},
+  cn:{title:'91% do refino · 94% dos ímãs',text:'Em 2024, a China respondeu por 91% do refino global de terras raras e 94% da produção de ímãs sinterizados, segundo a Agência Internacional de Energia. É nos elos industriais de maior valor que se concentra sua vantagem.'}
+};
+const geoPop=document.getElementById('geo-pop');
+document.querySelectorAll('[data-geo]').forEach(btn=>btn.addEventListener('click',()=>{
+ const item=geoData[btn.dataset.geo];document.getElementById('geo-pop-title').textContent=item.title;document.getElementById('geo-pop-text').textContent=item.text;geoPop.classList.add('is-open');
+ document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded',String(b===btn)));
+}));
+document.querySelector('.geo-pop-close').addEventListener('click',()=>{geoPop.classList.remove('is-open');document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded','false'))});
+
+</script>
     <noscript><img src="https://public.flourish.studio/visualisation/31024738/thumbnail" width="100%" alt="Mapa de processos minerários de terras raras no Brasil"></noscript>
   </div>
   <div class="flourish-fallback" data-for="visualisation/31024738"><a href="https://public.flourish.studio/visualisation/31024738/visualisation.json?ref=embed-script">Abrir dados da visualização no Flourish</a></div>
