@@ -281,11 +281,13 @@ body>*{position:relative;z-index:1}
 @media(max-width:760px){.nav{padding:0 12px;gap:8px;min-height:60px}.nav-links{gap:clamp(7px,2vw,12px)}.nav-links a{font-size:8px;letter-spacing:0}.nav .uff-link{width:36px;height:36px;flex-basis:36px}.uff-symbol{width:34px;height:32px;flex-basis:34px}.uff-symbol img{width:90px;top:-2px}}
 @media(max-width:360px){.nav{padding:0 8px}.nav-links{gap:6px}.nav-links a{font-size:7.5px}.nav .uff-link{flex-basis:32px;width:32px}.uff-symbol{width:30px;flex-basis:30px}.uff-symbol img{width:80px}}
 /* SÍMBOLO UFF: sem recorte de imagem */
-.nav .uff-link{display:flex;align-items:center;justify-content:center;flex:0 0 46px;width:46px;height:46px;color:#b51f2b}
+.nav .uff-link{display:flex;align-items:center;justify-content:center;flex:0 0 104px;width:104px;height:54px;color:#b51f2b}
 .uff-symbol{display:flex;align-items:center;justify-content:center;width:100%;height:100%;overflow:visible;position:static;flex:0 0 auto}
-.uff-symbol img{display:block;width:42px;height:42px;max-width:100%;object-fit:contain;object-position:center;position:static;filter:brightness(0) saturate(100%) invert(19%) sepia(78%) saturate(3265%) hue-rotate(339deg) brightness(87%) contrast(95%)}
-@media(max-width:760px){.nav .uff-link{width:38px;height:38px;flex-basis:38px}.uff-symbol img{width:36px;height:36px}}
-@media(max-width:360px){.nav .uff-link{width:34px;height:34px;flex-basis:34px}.uff-symbol img{width:32px;height:32px}}
+.uff-symbol img{display:block;width:96px;height:48px;max-width:100%;object-fit:contain;object-position:center;position:static;filter:brightness(0) saturate(100%) invert(19%) sepia(78%) saturate(3265%) hue-rotate(339deg) brightness(87%) contrast(95%)}
+.uff-signature{color:#004f9f;text-decoration:none;cursor:pointer}
+.uff-signature:hover{opacity:.78}
+@media(max-width:760px){.nav .uff-link{width:88px;height:46px;flex-basis:88px}.uff-symbol img{width:82px;height:42px}}
+@media(max-width:360px){.nav .uff-link{width:76px;height:42px;flex-basis:76px}.uff-symbol img{width:70px;height:38px}}
 </style>
 </head>
 <body>
@@ -470,10 +472,10 @@ body>*{position:relative;z-index:1}
       </div>
     </div>
     <div class="credits-bottom">
-      <div class="uff-signature">
+      <a class="uff-signature" href="https://www.uff.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir site oficial da UFF">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/UFF_Logo.svg" alt="Universidade Federal Fluminense">
         <span>Universidade Federal Fluminense</span>
-      </div>
+      </a>
       <div class="credits-note">Reportagem especial · Jornalismo · 2026<br>Trabalho produzido para a disciplina obrigatória Jornalismo para Plataformas Digitais · 2026.2<br>Ministrada por Rachel Bertol Domingues.</div>
     </div>
   </div>
