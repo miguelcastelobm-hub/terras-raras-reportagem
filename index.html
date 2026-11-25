@@ -362,18 +362,6 @@ body>*{position:relative;z-index:1}
 <div class="map-frame">
   <div class="flourish-embed flourish-map" data-src="visualisation/31024738" aria-label="Mapa interativo de processos minerários de terras raras no Brasil">
     <script src="https://public.flourish.studio/resources/embed.js">
-const geoData={
-  us:{title:'US$ 565 milhões',text:'Financiamento de até esse valor concedido à Serra Verde pela U.S. International Development Finance Corporation (DFC), agência de fomento do governo americano. O dado indica a dimensão do interesse financeiro dos EUA na cadeia brasileira.'},
-  br:{title:'Brasil: segunda maior reserva mundial',text:'O país reúne a segunda maior reserva mundial de terras raras. O desafio destacado pela reportagem é transformar essa disponibilidade geológica em capacidade de separação, refino e fabricação de componentes no território nacional.'},
-  cn:{title:'91% do refino · 94% dos ímãs',text:'Em 2024, a China respondeu por 91% do refino global de terras raras e 94% da produção de ímãs sinterizados, segundo a Agência Internacional de Energia. É nos elos industriais de maior valor que se concentra sua vantagem.'}
-};
-const geoPop=document.getElementById('geo-pop');
-document.querySelectorAll('[data-geo]').forEach(btn=>btn.addEventListener('click',()=>{
- const item=geoData[btn.dataset.geo];document.getElementById('geo-pop-title').textContent=item.title;document.getElementById('geo-pop-text').textContent=item.text;geoPop.classList.add('is-open');
- document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded',String(b===btn)));
-}));
-document.querySelector('.geo-pop-close').addEventListener('click',()=>{geoPop.classList.remove('is-open');document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded','false'))});
-
 </script>
     <noscript><img src="https://public.flourish.studio/visualisation/31024738/thumbnail" width="100%" alt="Mapa de processos minerários de terras raras no Brasil"></noscript>
   </div>
@@ -443,5 +431,17 @@ document.querySelector('.geo-pop-close').addEventListener('click',()=>{geoPop.cl
 <button class="backtop" id="backtop" aria-label="Voltar ao topo">↑</button>
 <script>
 const progress=document.getElementById('progress'),backtop=document.getElementById('backtop');function update(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';backtop.classList.toggle('show',scrollY>600)}addEventListener('scroll',update,{passive:true});update();backtop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const geoData={
+  us:{title:'US$ 565 milhões',text:'Financiamento de até esse valor concedido à Serra Verde pela U.S. International Development Finance Corporation (DFC), agência de fomento do governo americano. O dado indica a dimensão do interesse financeiro dos EUA na cadeia brasileira.'},
+  br:{title:'Brasil: segunda maior reserva mundial',text:'O país reúne a segunda maior reserva mundial de terras raras. O desafio destacado pela reportagem é transformar essa disponibilidade geológica em capacidade de separação, refino e fabricação de componentes no território nacional.'},
+  cn:{title:'91% do refino · 94% dos ímãs',text:'Em 2024, a China respondeu por 91% do refino global de terras raras e 94% da produção de ímãs sinterizados, segundo a Agência Internacional de Energia. É nos elos industriais de maior valor que se concentra sua vantagem.'}
+};
+const geoPop=document.getElementById('geo-pop');
+document.querySelectorAll('[data-geo]').forEach(btn=>btn.addEventListener('click',()=>{
+ const item=geoData[btn.dataset.geo];document.getElementById('geo-pop-title').textContent=item.title;document.getElementById('geo-pop-text').textContent=item.text;geoPop.classList.add('is-open');
+ document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded',String(b===btn)));
+}));
+document.querySelector('.geo-pop-close').addEventListener('click',()=>{geoPop.classList.remove('is-open');document.querySelectorAll('[data-geo]').forEach(b=>b.setAttribute('aria-expanded','false'))});
+
 </script>
 </body></html>
