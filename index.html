@@ -159,6 +159,26 @@ body>*{position:relative;z-index:1}
 .credits-note{text-align:right;font:9px/1.8 var(--mono);color:#888;letter-spacing:.04em;text-transform:uppercase}
 @media(max-width:760px){.credits{padding:75px 20px 35px}.credits-grid{grid-template-columns:1fr;gap:28px}.credits-bottom{align-items:start;flex-direction:column}.credits-note{text-align:left}.uff-signature img{width:125px}}
 
+
+.two-line-title{max-width:1000px}
+.mineral-art{max-width:1100px;margin:55px auto 70px;background:#202722;border:1px solid #465047;padding:clamp(18px,3vw,34px);color:#f1efe8;overflow:hidden}
+.mineral-art-top{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;border-bottom:1px solid #485148;padding-bottom:14px;font:9px var(--mono);letter-spacing:.13em;color:#cbd2c3}
+.mineral-stage{height:clamp(260px,42vw,440px);position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% 65%,rgba(213,227,75,.12),transparent 48%),linear-gradient(135deg,#242d27,#171d1a)}
+.mineral-stage svg{position:absolute;inset:0;width:100%;height:100%}
+.mineral-orbit{position:absolute;border:1px solid rgba(213,227,75,.15);border-radius:50%;left:50%;top:54%;transform:translate(-50%,-50%);pointer-events:none}
+.orbit-one{width:68%;height:68%}.orbit-two{width:86%;height:90%;transform:translate(-50%,-50%) rotate(-18deg)}
+.crystal{transform-box:fill-box;transform-origin:center bottom;transition:transform .35s ease,filter .35s ease}
+.crystal:hover{transform:translateY(-8px) scale(1.035);filter:brightness(1.2)}
+.mineral-pop{position:absolute;z-index:3;font:10px var(--mono)}
+.mineral-pop summary{cursor:pointer;list-style:none;border:1px solid #d5e34b;background:#202722;color:#d5e34b;padding:8px 11px;letter-spacing:.06em}
+.mineral-pop summary::-webkit-details-marker{display:none}
+.mineral-pop summary:after{content:" +";color:#f1efe8}
+.mineral-pop[open] summary:after{content:" −"}
+.pop-content{width:210px;background:#f1efe8;color:#202722;padding:13px 14px;line-height:1.55;box-shadow:5px 5px 0 rgba(0,0,0,.25);margin-top:7px}
+.pop-left{left:12%;top:57%}.pop-center{left:45%;top:68%}.pop-right{right:10%;top:55%}
+.mineral-art figcaption{font:10px/1.6 var(--mono);color:#aeb4aa;margin-top:13px}
+@media(max-width:620px){.two-line-title{font-size:clamp(34px,9vw,48px)}.mineral-art-top span:last-child{display:none}.pop-left{left:2%;top:8%}.pop-center{left:38%;top:70%}.pop-right{right:2%;top:8%}.pop-content{width:min(190px,55vw)}}
+
 </style>
 </head>
 <body>
@@ -167,7 +187,7 @@ body>*{position:relative;z-index:1}
 <header class="hero"><div class="hero-inner"><div class="eyebrow">Reportagem especial · Brasil · 2026</div><h1>O futuro das <em>terras raras</em> no Brasil</h1><p class="subtitle">O cabo de guerra global pelo minério do futuro e a nova lógica econômica.</p><div class="hero-meta"><div>Reportagem e apuração<span>Miguel Castelo Branco · Brenner Robson · João Felipe Braghin</span></div><div>Projeto editorial<span>Reportagem autoral colaborativa</span></div><div>Leitura<span>12 minutos</span></div></div></div></header>
 <main id="reportagem">
 <section class="intro"><p class="drop">Dono da segunda maior reserva mundial de terras raras, o Brasil ocupa uma posição paradoxal na corrida global pelos minerais usados em carros elétricos, turbinas eólicas, defesa e eletrônicos. O país exporta compostos de baixo valor agregado e importa os ímãs permanentes já prontos, enquanto entra no centro da disputa entre China e Estados Unidos pelo controle das cadeias de suprimento.</p><p>Com mais de 3 mil processos minerários ativos espalhados por 23 estados, quase todos ainda em fase de pesquisa, a expansão do setor pressiona o governo e a indústria a responder a uma mesma pergunta: se o país conseguirá internalizar o refino e a fabricação de componentes de alto valor sob a nova política nacional sancionada em setembro, ou se repetirá o ciclo histórico do minério de ferro, exportando matéria-prima bruta e absorvendo no território os passivos ambientais da extração.</p></section>
-<section class="section dark"><div class="section-head"><div class="section-no">01 / GEOPOLÍTICA</div><div><h2>Entre Pequim e Washington: a posição brasileira na disputa global</h2><p class="section-deck">A disputa por terras raras deixou de ser apenas comercial e passou a operar como alavanca diplomática e industrial entre potências.</p></div></div>
+<section class="section dark"><div class="section-head"><div class="section-no">01 / GEOPOLÍTICA</div><div><h2 class="two-line-title">Entre Pequim e Washington:<br>a posição brasileira na disputa global</h2><p class="section-deck">A disputa por terras raras deixou de ser apenas comercial e passou a operar como alavanca diplomática e industrial entre potências.</p></div></div>
 <figure class="photo"><img src="https://terrasrarasreport7.wordpress.com/wp-content/uploads/2026/11/trump-e-xi.jpg?w=1024" alt="Donald Trump e Xi Jinping em encontro diplomático"><figcaption>Foto: Andrew Harnik/Getty Images AsiaPac</figcaption></figure>
 <div class="article-grid"><article class="prose">
 <p>A China concentra a maior parte do processamento global desses elementos e passou a usar restrições e licenças de exportação como instrumento nas negociações com os Estados Unidos, expondo a vulnerabilidade de cadeias industriais dependentes de insumos chineses.</p>
@@ -220,7 +240,25 @@ body>*{position:relative;z-index:1}
 <div class="statline"><div class="stat"><strong>R$ 47,35 bi</strong><span>Isenções federais ao setor mineral · 2017–2024</span></div><div class="stat"><strong>R$ 46,1 bi</strong><span>Arrecadação da CFEM no mesmo período</span></div><div class="stat"><strong>325 t</strong><span>Venda projetada em óxido contido no último trimestre</span></div></div>
 </section>
 <section class="section dark"><div class="section-head"><div class="section-no">03 / TECNOLOGIA</div><div><h2>O gargalo tecnológico e os desafios industriais</h2><p class="section-deck">A defasagem tecnológica da cadeia produtiva brasileira em relação às potências protagonistas nessa corrida é ponto vital para entender por que grande parte da produção nacional é exportada em estado bruto ou com pouco beneficiamento.</p></div></div>
-<figure class="photo"><img src="https://terrasrarasreport7.wordpress.com/wp-content/uploads/2026/11/aplicacao-terras-raras-02-1.jpg?w=1024" alt="Amostras minerais sobre uma placa de circuito eletrônico"><figcaption>Foto: Shutterstock</figcaption></figure>
+<figure class="mineral-art" aria-label="Ilustração interativa de cristais minerais associados às terras raras">
+  <div class="mineral-art-top"><span>MATÉRIA-PRIMA / 17 ELEMENTOS</span><span>TOQUE OU PASSE O CURSOR NOS CRISTAIS</span></div>
+  <div class="mineral-stage">
+    <div class="mineral-orbit orbit-one"></div><div class="mineral-orbit orbit-two"></div>
+    <svg viewBox="0 0 1000 440" role="img" aria-label="Composição abstrata de cristais facetados em vermelho, amarelo e tons minerais">
+      <defs><linearGradient id="crystalA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3d77b"/><stop offset=".48" stop-color="#bd663f"/><stop offset="1" stop-color="#542d2b"/></linearGradient><linearGradient id="crystalB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6e7d2"/><stop offset=".5" stop-color="#8b9b8a"/><stop offset="1" stop-color="#384a43"/></linearGradient><linearGradient id="crystalC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1a18a"/><stop offset=".5" stop-color="#b52e35"/><stop offset="1" stop-color="#501d2b"/></linearGradient></defs>
+      <g opacity=".24" stroke="#d8dfc9" fill="none"><path d="M80 350H920M120 90V370M880 65V370"/><path d="M120 310L880 110M120 110L880 310"/></g>
+      <g class="crystal crystal-one"><path d="M260 330L305 105L360 55L415 150L390 350Z" fill="url(#crystalA)"/><path d="M305 105L360 55L350 220Z" fill="#f5e2a0"/><path d="M350 220L360 55L415 150L390 350Z" fill="#8e4936"/><path d="M260 330L350 220L390 350Z" fill="#d28b53"/></g>
+      <g class="crystal crystal-two"><path d="M430 350L455 150L520 85L570 180L550 350Z" fill="url(#crystalB)"/><path d="M455 150L520 85L505 240Z" fill="#e6ead7"/><path d="M505 240L520 85L570 180L550 350Z" fill="#65786e"/><path d="M430 350L505 240L550 350Z" fill="#a8b4a3"/></g>
+      <g class="crystal crystal-three"><path d="M600 345L630 130L690 70L750 155L720 350Z" fill="url(#crystalC)"/><path d="M630 130L690 70L675 235Z" fill="#f3b29a"/><path d="M675 235L690 70L750 155L720 350Z" fill="#7e2633"/><path d="M600 345L675 235L720 350Z" fill="#d55c4d"/></g>
+      <g fill="#d5e34b" font-family="monospace" font-size="17"><text x="155" y="395">Nd</text><text x="480" y="395">Dy</text><text x="775" y="395">Pr</text></g>
+      <g fill="#f1efe8" opacity=".65"><circle cx="190" cy="120" r="3"/><circle cx="810" cy="95" r="4"/><circle cx="850" cy="280" r="2"/><circle cx="165" cy="260" r="2"/></g>
+    </svg>
+    <details class="mineral-pop pop-left"><summary>Nd · Neodímio</summary><div class="pop-content">Essencial na fabricação de ímãs permanentes usados em motores elétricos e turbinas eólicas.</div></details>
+    <details class="mineral-pop pop-center"><summary>Dy · Disprósio</summary><div class="pop-content">Adicionado a ímãs de alto desempenho para manter a força magnética em temperaturas elevadas.</div></details>
+    <details class="mineral-pop pop-right"><summary>Pr · Praseodímio</summary><div class="pop-content">Usado em ligas magnéticas e em aplicações industriais de alta tecnologia.</div></details>
+  </div>
+  <figcaption>Ilustração editorial · Cristais estilizados e elementos que integram a cadeia das terras raras. Selecione cada etiqueta para saber mais.</figcaption>
+</figure>
 <div class="article-grid"><article class="prose">
 <p>As ligas metálicas e os ímãs permanentes, usados em motores elétricos, turbinas eólicas, equipamentos médicos e dispositivos eletrônicos, são importados já prontos.</p>
 <p>Segundo o professor e chefe do Departamento de Engenharia de Materiais da Universidade de São Paulo (USP), Hugo Ricardo Sandim, o primeiro grande desafio está na separação e no refino dos elementos. Embora sejam conhecidos como um grupo, as terras raras são compostas por 17 elementos químicos distintos, mas que possuem características muito semelhantes entre si.</p>
