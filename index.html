@@ -119,6 +119,24 @@ h2{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:700;line-
  .hero{min-height:600px;padding:76px 22px 60px}.hero h1{font-size:clamp(53px,14vw,82px);letter-spacing:-.08em}.hero-meta{gap:20px;margin-top:48px}.hero-meta div{min-width:40%}.intro{margin:75px auto 85px;padding:0 22px}.section{padding:75px 20px}.section-head{grid-template-columns:42px 1fr;gap:10px}.article-grid{grid-template-columns:1fr;gap:25px}.aside{order:-1;max-width:100%;margin-bottom:15px}.prose{font-size:15.5px}.map-frame .flourish-embed,.map-frame .flourish-embed iframe{min-height:490px}.closing{padding:80px 22px}.footer{gap:16px}
 }
 
+
+/* Partículas discretas em pixel art, inspiradas no pó de redstone */
+body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.13;background:
+linear-gradient(#b51f2b 0 0) 7% 19%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 7.4% 19%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 7% 19.4%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 91% 34%/4px 4px no-repeat,
+linear-gradient(#b51f2b 0 0) 91.5% 34%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 91% 34.5%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 17% 78%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 17.5% 78%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 17% 78.5%/3px 3px no-repeat,
+linear-gradient(#b51f2b 0 0) 83% 88%/4px 4px no-repeat,
+linear-gradient(#b51f2b 0 0) 83.5% 88%/3px 3px no-repeat;
+}
+body>*{position:relative;z-index:1}
+.progress{z-index:10}
+
 </style>
 </head>
 <body>
@@ -195,6 +213,7 @@ h2{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:700;line-
 <p>A extração afeta o solo, as águas subterrâneas no seu entorno e a vida das comunidades próximas às operações.</p>
 <p>Os impactos variam conforme o tipo de depósito e a técnica de extração, e podem incluir consumo elevado de água, geração de rejeitos e perda de vegetação.</p>
 <p>A maior parte da atividade ainda está na fase de pesquisa. Segundo a Agência Nacional de Mineração (ANM), em consulta de 22 de novembro de 2026, o país tinha 3.060 processos minerários ativos para terras raras e minerais associados (3.138 áreas, já que alguns processos têm mais de uma), em 23 estados, 97% deles em requerimento ou autorização de pesquisa. Bahia (1.040), Goiás (590) e Minas Gerais (517) concentram cerca de 70% do total.</p>
+<div class="statline"><div class="stat"><strong>3.060</strong><span>Processos minerários ativos</span></div><div class="stat"><strong>23</strong><span>Estados com processos ativos</span></div><div class="stat"><strong>97%</strong><span>Em requerimento ou autorização de pesquisa</span></div></div>
 <p>Como poucos projetos chegaram à lavra, parte dos impactos descritos a seguir são riscos apontados por especialistas.</p>
 <p>O biólogo Joel Henrique Ellwanger, pós-doutorando do Departamento de Genética da Universidade Federal do Rio Grande do Sul (UFRGS), afirma que rios, águas subterrâneas e solos podem ser contaminados por substâncias liberadas das rochas, por reagentes usados no processamento, como ácidos, e pelos rejeitos. Dependendo do depósito, esses materiais podem conter elementos radioativos, como urânio e tório.</p>
 <p>Os riscos, segundo o especialista, não acabam junto à paralisação das operações: “o encerramento das atividades de mineração não significa necessariamente o fim dos riscos ambientais”. Os contaminantes podem chegar às águas de forma lenta, no caso das infiltrações, ou rápida, em rompimentos de barragens e chuvas extremas. No caso do solo, em depósitos de argila os impactos tendem a se concentrar nas camadas superficiais, enquanto na rocha dura a céu aberto as alterações são mais profundas.</p>
@@ -202,8 +221,9 @@ h2{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:700;line-
 <p>Para comunidades indígenas e famílias que dependem da terra, os efeitos podem ser mais graves. Para Ellwanger, em muitos casos os benefícios prometidos pelas empresas “não chegam de forma satisfatória às comunidades locais”, e a geração de empregos costuma ficar abaixo do esperado. A população passa a conviver, diz, com a degradação do solo, a perda de biodiversidade e a possível contaminação da água e do ar, o que pode trazer riscos à saúde.</p>
 <p>Ellwanger avalia que o debate no Brasil prioriza os ganhos econômicos e geopolíticos, enquanto os custos socioambientais são “mencionados apenas de forma protocolar”. Para ele, um dos impactos mais negligenciados é a perda de biodiversidade, que atinge também a fauna silvestre e doméstica.</p>
 <p>O especialista aponta ainda as enchentes de 2024 no Rio Grande do Sul como prova de que eventos extremos podem espalhar poluentes em áreas de mineração de carvão, um risco considerado pouco avaliado no planejamento da atividade.</p>
+<p>Entre a abundância no subsolo e o gargalo nas fábricas, o avanço das terras raras no Brasil expõe uma encruzilhada de longo prazo. A resposta deve começar a aparecer nos próximos meses, em dois pontos: para onde vão as 325 toneladas que a Serra Verde projeta vender no último trimestre e se o regulamento do crédito fiscal da Lei 15.506 premiará mais quem separa e refina no país do que quem apenas concentra o minério.</p>
 </article><aside class="aside">3.060 processos minerários ativos. 97% ainda em pesquisa. A dimensão do interesse econômico precisa ser lida junto aos riscos socioambientais que acompanham a atividade.</aside></div>
-<div class="statline"><div class="stat"><strong>3.060</strong><span>Processos minerários ativos</span></div><div class="stat"><strong>23</strong><span>Estados com processos ativos</span></div><div class="stat"><strong>97%</strong><span>Em requerimento ou autorização de pesquisa</span></div></div>
+
 <div class="map-frame">
   <div class="flourish-embed flourish-map" data-src="visualisation/31024738" aria-label="Mapa interativo de processos minerários de terras raras no Brasil">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
@@ -213,7 +233,7 @@ h2{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:700;line-
   <div class="map-caption">Mapa interativo · Distribuição territorial dos processos minerários de terras raras e minerais associados. Visualização original incorporada da reportagem.</div>
 </div>
 </section>
-<section class="closing"><div class="closing-inner"><div class="kicker">Conclusão · O que está em jogo</div><h2>O minério está aqui. E o valor?</h2><p>Entre a abundância no subsolo e o gargalo nas fábricas, o avanço das terras raras no Brasil expõe uma encruzilhada de longo prazo. A resposta deve começar a aparecer nos próximos meses, em dois pontos: para onde vão as 325 toneladas que a Serra Verde projeta vender no último trimestre e se o regulamento do crédito fiscal da Lei 15.506 premiará mais quem separa e refina no país do que quem apenas concentra o minério.</p></div></section>
+
 </main>
 <footer class="footer"><div><strong>O futuro das terras raras no Brasil</strong><br>Reportagem especial · 2026</div><div>Texto: Miguel Castelo Branco · Brenner Robson · João Felipe Braghin</div><div>Jornalismo · Dados · Investigação</div></footer>
 <button class="backtop" id="backtop" aria-label="Voltar ao topo">↑</button>
