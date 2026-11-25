@@ -137,6 +137,28 @@ linear-gradient(#b51f2b 0 0) 83.5% 88%/3px 3px no-repeat;
 body>*{position:relative;z-index:1}
 .progress{z-index:10}
 
+
+.credits{padding:100px 26px 55px;background:#faf8f7;border-top:1px solid #eadede;color:#202124}
+.credits-inner{max-width:1120px;margin:0 auto}
+.credits-heading{max-width:760px;margin-bottom:55px}
+.credits-heading .kicker{color:#b51f2b}
+.credits-heading h2{font-size:clamp(42px,6vw,68px);margin:17px 0}
+.credits-heading>p{font-size:16px;color:#666;max-width:620px}
+.credits-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px 70px}
+.credits-block{border-top:1px solid #dfd5d3;padding-top:16px}
+.credits-label{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#b51f2b;margin-bottom:14px}
+.credits-block p,.credits-list{font-size:13px;line-height:1.8;color:#555}
+.credits-block p{margin:0 0 12px}
+.credits-names{font:600 20px/1.65 var(--serif)!important;color:#202124!important}
+.credits-list{padding-left:18px;margin:0}
+.credits-list li{margin:0 0 10px}
+.credits-list a{color:#a51e29;text-decoration-thickness:1px;text-underline-offset:3px}
+.credits-bottom{display:flex;justify-content:space-between;align-items:end;gap:25px;border-top:1px solid #dfd5d3;margin-top:60px;padding-top:30px}
+.uff-signature{display:flex;align-items:center;gap:18px;color:#004f9f;font:600 11px var(--mono);letter-spacing:.04em}
+.uff-signature img{display:block;width:150px;height:auto}
+.credits-note{text-align:right;font:9px/1.8 var(--mono);color:#888;letter-spacing:.04em;text-transform:uppercase}
+@media(max-width:760px){.credits{padding:75px 20px 35px}.credits-grid{grid-template-columns:1fr;gap:28px}.credits-bottom{align-items:start;flex-direction:column}.credits-note{text-align:left}.uff-signature img{width:125px}}
+
 </style>
 </head>
 <body>
@@ -213,6 +235,14 @@ body>*{position:relative;z-index:1}
 <p>A extração afeta o solo, as águas subterrâneas no seu entorno e a vida das comunidades próximas às operações.</p>
 <p>Os impactos variam conforme o tipo de depósito e a técnica de extração, e podem incluir consumo elevado de água, geração de rejeitos e perda de vegetação.</p>
 <p>A maior parte da atividade ainda está na fase de pesquisa. Segundo a Agência Nacional de Mineração (ANM), em consulta de 22 de novembro de 2026, o país tinha 3.060 processos minerários ativos para terras raras e minerais associados (3.138 áreas, já que alguns processos têm mais de uma), em 23 estados, 97% deles em requerimento ou autorização de pesquisa. Bahia (1.040), Goiás (590) e Minas Gerais (517) concentram cerca de 70% do total.</p>
+<div class="map-frame">
+  <div class="flourish-embed flourish-map" data-src="visualisation/31024738" aria-label="Mapa interativo de processos minerários de terras raras no Brasil">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript><img src="https://public.flourish.studio/visualisation/31024738/thumbnail" width="100%" alt="Mapa de processos minerários de terras raras no Brasil"></noscript>
+  </div>
+  <div class="flourish-fallback" data-for="visualisation/31024738"><a href="https://public.flourish.studio/visualisation/31024738/visualisation.json?ref=embed-script">Abrir dados da visualização no Flourish</a></div>
+  <div class="map-caption">Mapa interativo · Distribuição territorial dos processos minerários de terras raras e minerais associados. Visualização original incorporada da reportagem.</div>
+</div>
 <div class="statline"><div class="stat"><strong>3.060</strong><span>Processos minerários ativos</span></div><div class="stat"><strong>23</strong><span>Estados com processos ativos</span></div><div class="stat"><strong>97%</strong><span>Em requerimento ou autorização de pesquisa</span></div></div>
 <p>Como poucos projetos chegaram à lavra, parte dos impactos descritos a seguir são riscos apontados por especialistas.</p>
 <p>O biólogo Joel Henrique Ellwanger, pós-doutorando do Departamento de Genética da Universidade Federal do Rio Grande do Sul (UFRGS), afirma que rios, águas subterrâneas e solos podem ser contaminados por substâncias liberadas das rochas, por reagentes usados no processamento, como ácidos, e pelos rejeitos. Dependendo do depósito, esses materiais podem conter elementos radioativos, como urânio e tório.</p>
@@ -224,17 +254,54 @@ body>*{position:relative;z-index:1}
 <p>Entre a abundância no subsolo e o gargalo nas fábricas, o avanço das terras raras no Brasil expõe uma encruzilhada de longo prazo. A resposta deve começar a aparecer nos próximos meses, em dois pontos: para onde vão as 325 toneladas que a Serra Verde projeta vender no último trimestre e se o regulamento do crédito fiscal da Lei 15.506 premiará mais quem separa e refina no país do que quem apenas concentra o minério.</p>
 </article><aside class="aside">3.060 processos minerários ativos. 97% ainda em pesquisa. A dimensão do interesse econômico precisa ser lida junto aos riscos socioambientais que acompanham a atividade.</aside></div>
 
-<div class="map-frame">
-  <div class="flourish-embed flourish-map" data-src="visualisation/31024738" aria-label="Mapa interativo de processos minerários de terras raras no Brasil">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript><img src="https://public.flourish.studio/visualisation/31024738/thumbnail" width="100%" alt="Mapa de processos minerários de terras raras no Brasil"></noscript>
-  </div>
-  <div class="flourish-fallback" data-for="visualisation/31024738"><a href="https://public.flourish.studio/visualisation/31024738/visualisation.json?ref=embed-script">Abrir dados da visualização no Flourish</a></div>
-  <div class="map-caption">Mapa interativo · Distribuição territorial dos processos minerários de terras raras e minerais associados. Visualização original incorporada da reportagem.</div>
-</div>
+
 </section>
 
 </main>
+
+<section class="credits" id="creditos">
+  <div class="credits-inner">
+    <div class="credits-heading">
+      <div class="kicker">Expediente · Transparência</div>
+      <h2>Créditos e fontes</h2>
+      <p>Esta reportagem foi construída a partir de bases públicas, documentos oficiais, registros empresariais e entrevistas realizadas pela equipe.</p>
+    </div>
+    <div class="credits-grid">
+      <div class="credits-block">
+        <div class="credits-label">Reportagem e apuração</div>
+        <p class="credits-names">Miguel Castelo Branco<br>Brenner Robson<br>João Felipe Braghin</p>
+      </div>
+      <div class="credits-block">
+        <div class="credits-label">Entrevistados</div>
+        <p>Iago Montalvão, doutorando em Teoria Econômica na Unicamp; Ryan de Albuquerque da Silva, doutorando em Economia da Indústria e da Tecnologia na UFRJ; Hugo Ricardo Sandim, professor da USP; e Joel Henrique Ellwanger, pós-doutorando na UFRGS.</p>
+      </div>
+      <div class="credits-block">
+        <div class="credits-label">Bases de dados e documentos</div>
+        <ul class="credits-list">
+          <li><a href="https://sistemas.anm.gov.br/SCM/Extra/site/admin/pesquisarProcessos.aspx" target="_blank" rel="noopener">Agência Nacional de Mineração (ANM)</a> — consulta de processos minerários realizada em 22 de novembro de 2026.</li>
+          <li><a href="https://comexstat.mdic.gov.br/" target="_blank" rel="noopener">Comex Stat / Ministério do Desenvolvimento, Indústria, Comércio e Serviços</a> — dados de comércio exterior.</li>
+          <li><a href="https://www.sec.gov/edgar/search/" target="_blank" rel="noopener">U.S. Securities and Exchange Commission (SEC)</a> — documentos corporativos da Serra Verde/USA Rare Earth.</li>
+          <li><a href="https://www.gov.br/planalto/pt-br" target="_blank" rel="noopener">Lei nº 15.506/2026</a> e Projeto de Lei nº 2.780/2024 — Política Nacional de Minerais Críticos e Estratégicos.</li>
+          <li><a href="https://www.dfc.gov/" target="_blank" rel="noopener">U.S. International Development Finance Corporation (DFC)</a> — informações sobre o financiamento à Serra Verde.</li>
+          <li><a href="https://acobrasil.org.br/" target="_blank" rel="noopener">Instituto Aço Brasil</a> — dados sobre exportações de produtos siderúrgicos.</li>
+          <li>Comunicados públicos da <a href="https://www.usare.com/" target="_blank" rel="noopener">USA Rare Earth</a> e informações institucionais das empresas citadas.</li>
+        </ul>
+      </div>
+      <div class="credits-block">
+        <div class="credits-label">Direito de resposta</div>
+        <p>A reportagem procurou a Neo Performance Materials para confirmar se recebeu lotes brasileiros enviados à Estônia. A empresa não respondeu até o fechamento. O Saskatchewan Research Council (SRC), questionado sobre os embarques destinados ao Canadá, não confirmou nem negou o recebimento e recusou-se a comentar, alegando confidencialidade contratual. A USA Rare Earth também foi procurada por e-mail sobre o destino dos lotes, o teor do material exportado e os planos de processamento no Brasil, mas não retornou o contato.</p>
+        <p>O Ministério de Minas e Energia respondeu que a regulamentação da política compete ao MDIC. O ministério e o gabinete do deputado federal Zé Silva foram questionados sobre o prazo e os critérios do regulamento, mas não responderam até a publicação.</p>
+      </div>
+    </div>
+    <div class="credits-bottom">
+      <div class="uff-signature">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/UFF_Logo.svg" alt="Universidade Federal Fluminense">
+        <span>Universidade Federal Fluminense</span>
+      </div>
+      <div class="credits-note">Reportagem especial · Jornalismo · 2026<br>Produção independente de caráter acadêmico.</div>
+    </div>
+  </div>
+</section>
 <footer class="footer"><div><strong>O futuro das terras raras no Brasil</strong><br>Reportagem especial · 2026</div><div>Texto: Miguel Castelo Branco · Brenner Robson · João Felipe Braghin</div><div>Jornalismo · Dados · Investigação</div></footer>
 <button class="backtop" id="backtop" aria-label="Voltar ao topo">↑</button>
 <script>
