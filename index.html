@@ -180,6 +180,30 @@ body>*{position:relative;z-index:1}
 @media(max-width:620px){.two-line-title{font-size:clamp(34px,9vw,48px)}.mineral-art-top span:last-child{display:none}.pop-left{left:2%;top:8%}.pop-center{left:38%;top:70%}.pop-right{right:2%;top:8%}.pop-content{width:min(190px,55vw)}}
 
 
+
+/* Destaques editoriais para direito de resposta e pronunciamentos institucionais */
+.response-box{
+  margin:38px 0 42px;padding:22px 26px 8px;
+  background:#fff7f6;border:1px solid #efd9d8;border-left:4px solid #b51f2b;
+}
+.response-label{
+  margin:0 0 16px;color:#a51e29;
+  font:700 10px/1.4 var(--mono);letter-spacing:.13em;text-transform:uppercase;
+}
+.prose .response-box p{
+  margin:0 0 17px;font-size:15px;line-height:1.78;color:#393333;
+}
+.prose .response-box p:last-child{margin-bottom:14px}
+.prose p.statement-note{
+  margin:30px 0;padding:20px 24px;
+  background:#faf7f6;border-left:3px solid #b51f2b;
+  font-size:15.5px;line-height:1.82;
+}
+@media(max-width:760px){
+  .response-box{padding:18px 17px 5px;margin:30px 0}
+  .prose .response-box p,.prose p.statement-note{font-size:14.5px}
+  .prose p.statement-note{padding:17px 18px}
+}
 </style>
 </head>
 <body>
@@ -223,15 +247,15 @@ body>*{position:relative;z-index:1}
 <p>As entidades que receberam os lotes de 2026 não aparecem nos dados, já que o Comex Stat registra apenas o país de destino, e não o importador. Por isso, a reportagem procurou a Neo Performance Materials, que opera uma planta de separação de terras raras na Estônia, e o Saskatchewan Research Council (SRC), que tem uma instalação de processamento no Canadá, para saber se receberam material brasileiro. A Neo não respondeu até o fechamento desta reportagem.</p>
 <p>O SRC não confirmou nem negou, e se recusou a comentar citando a confidencialidade de seus contratos.</p>
 <p>A USA Rare Earth, dona da Serra Verde, também foi questionada sobre o destino desses lotes, o teor do material exportado e os planos de processamento no país, mas não retornou o contato realizado via e-mail.</p>
-<p>Em comunicado divulgado em 9 de novembro, a USAR afirmou que em outubro começaram as entregas comerciais ao comprador americano. A cadeia é descrita como alternativa à China, e essas entregas ainda não aparecem nas estatísticas oficiais disponíveis. Se confirmado, muda quem compra e quem controla a venda: no lugar de uma venda concentrada nos chineses, um contrato que reserva o composto a uma sociedade capitalizada pelo governo dos EUA.</p>
-<p>A própria Serra Verde afirma que não produz óxidos separados em escala comercial, mas mantém a opção de construir uma planta de separação, ainda sem detalhes divulgados.</p>
+<p class="statement-note">Em comunicado divulgado em 9 de novembro, a USAR afirmou que em outubro começaram as entregas comerciais ao comprador americano. A cadeia é descrita como alternativa à China, e essas entregas ainda não aparecem nas estatísticas oficiais disponíveis. Se confirmado, muda quem compra e quem controla a venda: no lugar de uma venda concentrada nos chineses, um contrato que reserva o composto a uma sociedade capitalizada pelo governo dos EUA.</p>
+<p class="statement-note">A própria Serra Verde afirma que não produz óxidos separados em escala comercial, mas mantém a opção de construir uma planta de separação, ainda sem detalhes divulgados.</p>
 <p>Para Iago Montalvão, essa lacuna resume o risco de o país apenas trocar de comprador externo sem reter a etapa mais lucrativa da cadeia. É no refino e na fabricação de ímãs que estão os empregos qualificados e a maior margem de valor, etapas que seguem concentradas na China.</p>
 <p>Sem contrapartidas de processamento local, o pesquisador aponta que o Brasil tende a repetir com as terras raras o padrão histórico do minério de ferro. Em 2025, as exportações de minério e concentrados somaram US$28,9 bilhões, segundo o Comex Stat, quase quatro vezes os US$7,4 bilhões exportados em produtos siderúrgicos, de acordo com o Instituto Aço Brasil.</p>
 <blockquote>“A transferência tecnológica não ocorre espontaneamente, porque essas empresas respondem às estratégias de seus Estados de origem. Não há qualquer compromisso de refinar no Brasil. Entre 2017 e 2024, as isenções federais ao setor mineral praticamente igualaram tudo o que o país arrecadou em royalties”.</blockquote>
 <p>O cálculo é de um estudo que Montalvão assina junto do economista Diógenes Breda, da Universidade Federal de Uberlândia (UFU): R$ 47,35 bilhões em isenções federais ao setor mineral entre 2017 e 2024, contra R$ 46,1 bilhões arrecadados pela Compensação Financeira pela Exploração Mineral (CFEM), os royalties da mineração.</p>
 <p>É para essa lacuna do processamento local que também aponta a Lei 15.506, sancionada em 16 de setembro de 2026 a partir do Projeto de Lei 2.780/2024, do deputado federal Zé Silva (UNIÃO-MG), que instituiu a Política Nacional de Minerais Críticos e Estratégicos. O texto trata a agregação de valor em território nacional como princípio e prevê crédito fiscal proporcional ao valor agregado, mas deixa para um regulamento os critérios do que conta como agregação.</p>
 <p>A lei não proíbe a exportação de minério ou de concentrado nem obriga o processamento no país, mas prevê que o regulamento poderá condicionar exportações a compromissos de agregação de valor.</p>
-<p>O Ministério de Minas e Energia informou por e-mail que a regulamentação compete ao Ministério do Desenvolvimento, Indústria, Comércio e Serviços (que preside o Conselho Nacional para Industrialização de Minerais Críticos e Estratégicos). Questionados também sobre o prazo do regulamento e se a lei prevê mecanismos contra a exportação apenas de matéria-prima, nem o MDIC, nem o gabinete do deputado federal responderam até a publicação.</p>
+<p class="statement-note">O Ministério de Minas e Energia informou por e-mail que a regulamentação compete ao Ministério do Desenvolvimento, Indústria, Comércio e Serviços (que preside o Conselho Nacional para Industrialização de Minerais Críticos e Estratégicos). Questionados também sobre o prazo do regulamento e se a lei prevê mecanismos contra a exportação apenas de matéria-prima, nem o MDIC, nem o gabinete do deputado federal responderam até a publicação.</p>
 <p>Já o doutorando em Economia da Indústria e da Tecnologia da Universidade Federal do Rio de Janeiro (UFRJ), Ryan de Albuquerque da Silva, vê a nova política como um “grande e significativo passo”, mas teme que a geração de maior valor siga sob controle estrangeiro, sem que o país internalize separação, refino e fabricação de ímãs. Parcerias internacionais são bem-vindas, diz, desde que tragam transferência real de tecnologia e sejam avaliadas caso a caso pelo Estado brasileiro.</p>
 <p>Ele defende priorizar acordos com quem domina a cadeia, e cita a China.</p>
 <p>A proposta esbarra num limite externo. Desde 2023, Pequim proíbe exportar tecnologia de separação de terras raras e de fabricação de ímãs. Como saída de longo prazo, Silva propõe articular União, estados e municípios, com o BNDES e universidades, e criar, “no melhor dos cenários”, uma estatal de terras raras nos moldes da Petrobras.</p>
