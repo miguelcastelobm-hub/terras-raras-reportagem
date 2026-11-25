@@ -180,13 +180,36 @@ body>*{position:relative;z-index:1}
 @media(max-width:620px){.two-line-title{font-size:clamp(34px,9vw,48px)}.mineral-art-top span:last-child{display:none}.pop-left{left:2%;top:8%}.pop-center{left:38%;top:70%}.pop-right{right:2%;top:8%}.pop-content{width:min(190px,55vw)}}
 
 
-/* Getty Images — tratamento editorial em vermelho na seção de geopolítica */
-.geopolitics-getty{max-width:1100px;margin:55px auto 70px}
-.getty-red-treatment{position:relative;width:100%;max-width:594px;min-height:396px;margin:0 auto;overflow:hidden;background:#f1e8e7;filter:grayscale(1) sepia(1) saturate(4.8) hue-rotate(305deg) contrast(1.08)}
-.getty-red-treatment:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(181,31,43,.18),transparent 58%),linear-gradient(0deg,rgba(120,0,12,.12),transparent 45%);mix-blend-mode:multiply}
-.geopolitics-getty .gie-single{display:block;width:100%;min-height:396px}
-.geopolitics-getty figcaption{max-width:594px;margin:10px auto 0}
-@media(max-width:640px){.getty-red-treatment{min-height:0}.geopolitics-getty .gie-single{min-height:0}}
+/* Getty Images — imagem em tela cheia com tratamento editorial discreto */
+.geopolitics-getty{
+  position:relative;left:50%;transform:translateX(-50%);
+  width:100vw;max-width:none;margin:58px 0 76px;overflow:hidden;
+  background:#171717;
+}
+.getty-red-treatment{
+  position:relative;width:100%;height:clamp(320px,66.6667vw,850px);
+  margin:0 auto;overflow:hidden;background:#171717;
+}
+.getty-red-treatment:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(110deg,rgba(151,18,31,.13),transparent 42%,rgba(151,18,31,.07)),
+             linear-gradient(0deg,rgba(15,15,15,.18),transparent 24%);
+  mix-blend-mode:color;
+}
+.geopolitics-getty .gie-single{display:block;width:100%;height:100%;min-height:0}
+.geopolitics-getty iframe{
+  display:block;width:100%!important;height:100%!important;max-width:none!important;
+  border:0;filter:grayscale(.16) contrast(1.035) saturate(.88);
+}
+.geopolitics-getty figcaption{
+  max-width:1100px;margin:12px auto 0;padding:0 24px 12px;
+  color:#777;font:10px var(--mono);letter-spacing:.04em;
+}
+@media(max-width:640px){
+  .geopolitics-getty{margin:38px 0 52px}
+  .getty-red-treatment{height:clamp(300px,72vw,480px)}
+  .geopolitics-getty figcaption{padding:0 18px 10px}
+}
 </style>
 </head>
 <body>
@@ -199,7 +222,7 @@ body>*{position:relative;z-index:1}
 <figure class="photo geopolitics-getty" aria-label="Imagem de Getty Images sobre a disputa geopolítica entre Estados Unidos e China">
   <div class="getty-red-treatment">
     <a id='tjpQXDQ_SCNiHFyh9ep-HA' class='gie-single' href='https://www.gettyimages.com/detail/1212971284' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a>
-    <script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'tjpQXDQ_SCNiHFyh9ep-HA',sig:'fyaiQt1wzReiL5vhy04P4Ov5yfcBtZzfIMD3dvC6so4=',w:'594px',h:'396px',items:'1212971284',caption: true ,tld:'com',is360: false })});</script>
+    <script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'tjpQXDQ_SCNiHFyh9ep-HA',sig:'fyaiQt1wzReiL5vhy04P4Ov5yfcBtZzfIMD3dvC6so4=',w:'100vw',h:'66.6667vw',items:'1212971284',caption: true ,tld:'com',is360: false })});</script>
     <script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
   </div>
   <figcaption>Imagem: Getty Images</figcaption>
