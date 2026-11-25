@@ -268,11 +268,23 @@ body>*{position:relative;z-index:1}
 .prose p,.prose blockquote{text-wrap:pretty;widows:3;orphans:3}
 .prose blockquote cite{display:block;margin-top:14px;font:500 10px/1.55 var(--mono);font-style:normal;letter-spacing:.035em;text-transform:uppercase;color:#777}
 @media(max-width:760px){.prose p,.prose blockquote{text-wrap:pretty}.prose blockquote cite{font-size:9px}}
+
+/* NAVEGAÇÃO DE CONSULTA E SÍMBOLO UFF */
+.nav{height:auto;min-height:64px;gap:20px}
+.nav-links{display:flex;align-items:center;gap:clamp(12px,2.2vw,28px);min-width:0}
+.nav-links a{white-space:nowrap;font-size:10px;letter-spacing:.045em;transition:color .2s ease}
+.nav-links a:hover{color:#b51f2b}
+.nav .uff-link{flex:0 0 42px;width:42px;height:42px;color:#b51f2b}
+.uff-symbol{display:block;width:40px;height:36px;overflow:hidden;position:relative;flex:0 0 40px}
+.uff-symbol img{display:block;width:105px;max-width:none;height:auto;position:absolute;left:0;top:-3px;filter:brightness(0) saturate(100%) invert(19%) sepia(78%) saturate(3265%) hue-rotate(339deg) brightness(87%) contrast(95%)}
+#dados,#direito-resposta,#fontes{scroll-margin-top:82px}
+@media(max-width:760px){.nav{padding:0 12px;gap:8px;min-height:60px}.nav-links{gap:clamp(7px,2vw,12px)}.nav-links a{font-size:8px;letter-spacing:0}.nav .uff-link{width:36px;height:36px;flex-basis:36px}.uff-symbol{width:34px;height:32px;flex-basis:34px}.uff-symbol img{width:90px;top:-2px}}
+@media(max-width:360px){.nav{padding:0 8px}.nav-links{gap:6px}.nav-links a{font-size:7.5px}.nav .uff-link{flex-basis:32px;width:32px}.uff-symbol{width:30px;flex-basis:30px}.uff-symbol img{width:80px}}
 </style>
 </head>
 <body>
 <div class="progress" id="progress"></div><div class="topline"></div>
-<nav class="nav"><a href="#reportagem">Ler reportagem ↓</a><a class="uff-link" href="https://www.uff.br/" target="_blank" rel="noopener noreferrer" aria-label="Universidade Federal Fluminense — abrir site oficial"><span class="uff-symbol"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/UFF_Logo.svg" alt=""></span></a></nav>
+<nav class="nav"><div class="nav-links"><a href="#reportagem">Ler reportagem ↓</a><a href="#dados">Dados</a><a href="#direito-resposta">Direito de resposta</a><a href="#fontes">Fontes</a></div><a class="uff-link" href="https://www.uff.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir site oficial da UFF"><span class="uff-symbol"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/UFF_Logo.svg" alt=""></span></a></nav>
 <header class="hero"><div class="hero-inner"><div class="eyebrow">Reportagem especial · Brasil · 2026</div><h1>O futuro das <em>terras raras</em> no Brasil</h1><p class="subtitle">O cabo de guerra global pelo minério do futuro e a nova lógica econômica.</p><div class="hero-meta"><div>Reportagem e apuração<span>Miguel Castelo Branco · Brenner Robson · João Felipe Braghin</span></div><div>Trabalho produzido para a disciplina<span>Jornalismo para Plataformas Digitais · 2026.2</span></div><div>Professora<span>Rachel Bertol Domingues</span></div></div></div></header>
 <main id="reportagem">
 <section class="intro"><p class="drop">Dono da segunda maior reserva mundial de terras raras, o Brasil ocupa uma posição paradoxal na corrida global pelos minerais usados em carros elétricos, turbinas eólicas, defesa e eletrônicos. O país exporta compostos de baixo valor agregado e importa os ímãs permanentes já prontos, enquanto entra no centro da disputa entre China e Estados Unidos pelo controle das cadeias de suprimento.</p><p>Com mais de 3 mil processos minerários ativos espalhados por 23 estados, quase todos ainda em fase de pesquisa, a expansão do setor pressiona o governo e a indústria a responder a uma mesma pergunta: se o país conseguirá internalizar o refino e a fabricação de componentes de alto valor sob a nova política nacional sancionada em setembro, ou se repetirá o ciclo histórico do minério de ferro, exportando matéria-prima bruta e absorvendo no território os passivos ambientais da extração.</p></section>
@@ -326,7 +338,7 @@ body>*{position:relative;z-index:1}
 <p>O cenário mudou este ano. Nos dados disponíveis até outubro, foram apenas 56 toneladas exportadas, cerca de 8% do volume de 2025. O contrato de venda anterior da empresa foi suspenso em fevereiro, por produção restrita, segundo os mesmos documentos.</p>
 <p>Além da queda no volume, a China deixou de aparecer como destino. O último embarque registrado para o país foi em novembro de 2025. Os poucos embarques de 2026 foram principalmente para a Estônia (21 toneladas), os EUA (22) e o Canadá (10), contra embarques de 60 a 419 toneladas para a China em 2025.</p>
 </article><aside class="aside">A alta de 2025 foi excepcional e, em parte, explicada pela venda de estoques acumulados. Os dados parciais de 2026 mostram outra configuração de destinos.</aside></div>
-<div class="chart-wrap"><div class="chart-top"><div><div class="chart-label">Visualização 01 · Comércio exterior</div><div class="chart-title">A virada nas exportações brasileiras de terras raras</div><div class="chart-sub">Após pico puxado por estoque em 2025, embarques despencam em 2026 e a China desaparece da lista de destinos de compostos</div></div><div class="chart-label">Volume total exportado</div></div>
+<div class="chart-wrap" id="dados"><div class="chart-top"><div><div class="chart-label">Visualização 01 · Comércio exterior</div><div class="chart-title">A virada nas exportações brasileiras de terras raras</div><div class="chart-sub">Após pico puxado por estoque em 2025, embarques despencam em 2026 e a China desaparece da lista de destinos de compostos</div></div><div class="chart-label">Volume total exportado</div></div>
 <div class="bars"><div class="bar-col"><div class="bar-value">60,9 t</div><div class="bar" style="height:9%"></div><div class="bar-year">2024</div></div><div class="bar-col"><div class="bar-value">679,8 t</div><div class="bar" style="height:100%"></div><div class="bar-year">2025 · alta de 11x com venda de estoque</div></div><div class="bar-col"><div class="bar-value">56,2 t</div><div class="bar" style="height:8.3%"></div><div class="bar-year">2026* · janeiro a outubro</div></div></div>
 <div class="chart-foot">* Dados de 2026 parciais até outubro. Considera compostos de terras raras (NCM 2846, exceto 2846.90.30). Fonte: Comex Stat / MDIC.</div></div>
 <div class="chart-credit">Gráfico de elaboração autoral da reportagem, com dados do Comex Stat / MDIC.</div>
@@ -433,7 +445,7 @@ body>*{position:relative;z-index:1}
         <div class="credits-label">Entrevistados</div>
         <p>Iago Montalvão, doutorando em Teoria Econômica na Unicamp; Ryan de Albuquerque da Silva, doutorando em Economia da Indústria e da Tecnologia na UFRJ; Hugo Ricardo Zschommler Sandim, professor da USP; e Joel Henrique Ellwanger, pós-doutorando na UFRGS.</p>
       </div>
-      <div class="credits-block">
+      <div class="credits-block" id="fontes">
         <div class="credits-label">Bases de dados e documentos</div>
         <ul class="credits-list">
           <li><a href="https://sistemas.anm.gov.br/SCM/Extra/site/admin/pesquisarProcessos.aspx" target="_blank" rel="noopener">Agência Nacional de Mineração (ANM)</a> — consulta de processos minerários realizada em 22 de novembro de 2026.</li>
@@ -445,7 +457,7 @@ body>*{position:relative;z-index:1}
           <li>Comunicados públicos da <a href="https://www.usare.com/" target="_blank" rel="noopener">USA Rare Earth</a> e informações institucionais das empresas citadas.</li>
         </ul>
       </div>
-      <div class="credits-block">
+      <div class="credits-block" id="direito-resposta">
         <div class="credits-label">Direito de resposta</div>
         <p>A reportagem procurou a Neo Performance Materials para confirmar se recebeu lotes brasileiros enviados à Estônia. A empresa não respondeu até o fechamento. O Saskatchewan Research Council (SRC), questionado sobre os embarques destinados ao Canadá, não confirmou nem negou o recebimento e recusou-se a comentar, alegando confidencialidade contratual. A USA Rare Earth também foi procurada por e-mail sobre o destino dos lotes, o teor do material exportado e os planos de processamento no Brasil, mas não retornou o contato.</p>
         <p>O Ministério de Minas e Energia respondeu que a regulamentação da política compete ao MDIC. O ministério e o gabinete do deputado federal Zé Silva foram questionados sobre o prazo e os critérios do regulamento, mas não responderam até a publicação.</p>
