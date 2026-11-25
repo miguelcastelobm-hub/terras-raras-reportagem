@@ -280,6 +280,12 @@ body>*{position:relative;z-index:1}
 #dados,#direito-resposta,#fontes{scroll-margin-top:82px}
 @media(max-width:760px){.nav{padding:0 12px;gap:8px;min-height:60px}.nav-links{gap:clamp(7px,2vw,12px)}.nav-links a{font-size:8px;letter-spacing:0}.nav .uff-link{width:36px;height:36px;flex-basis:36px}.uff-symbol{width:34px;height:32px;flex-basis:34px}.uff-symbol img{width:90px;top:-2px}}
 @media(max-width:360px){.nav{padding:0 8px}.nav-links{gap:6px}.nav-links a{font-size:7.5px}.nav .uff-link{flex-basis:32px;width:32px}.uff-symbol{width:30px;flex-basis:30px}.uff-symbol img{width:80px}}
+/* SÍMBOLO UFF: sem recorte de imagem */
+.nav .uff-link{display:flex;align-items:center;justify-content:center;flex:0 0 46px;width:46px;height:46px;color:#b51f2b}
+.uff-symbol{display:flex;align-items:center;justify-content:center;width:100%;height:100%;overflow:visible;position:static;flex:0 0 auto}
+.uff-symbol img{display:block;width:42px;height:42px;max-width:100%;object-fit:contain;object-position:center;position:static;filter:brightness(0) saturate(100%) invert(19%) sepia(78%) saturate(3265%) hue-rotate(339deg) brightness(87%) contrast(95%)}
+@media(max-width:760px){.nav .uff-link{width:38px;height:38px;flex-basis:38px}.uff-symbol img{width:36px;height:36px}}
+@media(max-width:360px){.nav .uff-link{width:34px;height:34px;flex-basis:34px}.uff-symbol img{width:32px;height:32px}}
 </style>
 </head>
 <body>
