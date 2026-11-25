@@ -264,6 +264,11 @@ body>*{position:relative;z-index:1}
 .geo-visual{width:min(1100px,calc(100vw - 48px));position:relative;left:50%;transform:translateX(-50%)}
 .geo-caption{width:min(1100px,calc(100vw - 48px));position:relative;left:50%;transform:translateX(-50%)}
 @media(max-width:760px){.geo-visual,.geo-caption{width:calc(100vw - 40px)}}
+
+/* Tipografia: evitar linhas finais órfãs e identificar olhos/citações */
+.prose p,.prose blockquote{text-wrap:pretty;widows:3;orphans:3}
+.prose blockquote cite{display:block;margin-top:14px;font:500 10px/1.55 var(--mono);font-style:normal;letter-spacing:.035em;text-transform:uppercase;color:#777}
+@media(max-width:760px){.prose p,.prose blockquote{text-wrap:pretty}.prose blockquote cite{font-size:9px}}
 </style>
 </head>
 <body>
@@ -306,7 +311,7 @@ body>*{position:relative;z-index:1}
 <div class="geo-caption">Ilustração geopolítica gerada por inteligência artificial, com dados e informações de apuração autoral da reportagem.</div>
 
 <p>Para Montalvão, a aproximação com Washington expõe o risco de o Brasil apenas trocar uma dependência externa por outra, mantendo o papel de fornecedor de matéria-prima enquanto o refino e a fabricação de ímãs permanecem no exterior e os lucros deixam o país na forma de dividendos. “A lavra gera pouco emprego qualificado, e esse emprego está no refino e na fabricação de ímãs, que acontecem fora do país”, afirma.</p>
-<blockquote>“Soberania não é apenas ter o minério no subsolo, tem que ter poder de decisão sobre o que se faz com ele.”</blockquote>
+<blockquote>“Soberania não é apenas ter o minério no subsolo, tem que ter poder de decisão sobre o que se faz com ele.”<cite>— Iago Montalvão, doutorando em Teoria Econômica (Unicamp)</cite></blockquote>
 <p>Nesse cabo de guerra entre Estados Unidos e China, o especialista também avalia que o Brasil dispõe de margem para negociar com diferentes polos e exigir contrapartidas de processamento local e transferência tecnológica, inclusive por meio dos BRICS, que têm peso relevante nas reservas globais.</p>
 <p>Na avaliação do economista, transformar esse potencial em estratégia de longo prazo esbarra na arquitetura institucional criada pela Lei 15.506, sancionada em setembro, que instituiu um conselho ligado à Presidência para aprovar ou vetar projetos, definir diretrizes e acompanhar mudanças no controle societário de ativos minerais.</p>
 <p>O pesquisador aponta que a norma deixou de fora a criação de uma estatal voltada ao refino. Sem regulamentação rigorosa e políticas de Estado capazes de sobreviver a mudanças de governo, ele avalia que o país corre o risco de ver suas diretrizes minerais revertidas a cada alternância de poder, como ocorreu em outros países da região com o lítio, enquanto segue preso à exportação bruta e à importação de manufaturados.</p>
@@ -341,7 +346,7 @@ body>*{position:relative;z-index:1}
 <p class="statement-note">A própria Serra Verde afirma que não produz óxidos separados em escala comercial, mas mantém a opção de construir uma planta de separação, ainda sem detalhes divulgados.</p>
 <p>Para Iago Montalvão, essa lacuna resume o risco de o país apenas trocar de comprador externo sem reter a etapa mais lucrativa da cadeia. É no refino e na fabricação de ímãs que estão os empregos qualificados e a maior margem de valor, etapas que seguem concentradas na China.</p>
 <p>Sem contrapartidas de processamento local, o pesquisador aponta que o Brasil tende a repetir com as terras raras o padrão histórico do minério de ferro. Em 2025, as exportações de minério e concentrados somaram US$28,9 bilhões, segundo o Comex Stat, quase quatro vezes os US$7,4 bilhões exportados em produtos siderúrgicos, de acordo com o Instituto Aço Brasil.</p>
-<blockquote>“A transferência tecnológica não ocorre espontaneamente, porque essas empresas respondem às estratégias de seus Estados de origem. Não há qualquer compromisso de refinar no Brasil. Entre 2017 e 2024, as isenções federais ao setor mineral praticamente igualaram tudo o que o país arrecadou em royalties”.</blockquote>
+<blockquote>“A transferência tecnológica não ocorre espontaneamente, porque essas empresas respondem às estratégias de seus Estados de origem. Não há qualquer compromisso de refinar no Brasil. Entre 2017 e 2024, as isenções federais ao setor mineral praticamente igualaram tudo o que o país arrecadou em royalties”.<cite>— Iago Montalvão, em estudo com Diógenes Breda (UFU)</cite></blockquote>
 <p>O cálculo é de um estudo que Montalvão assina junto do economista Diógenes Breda, da Universidade Federal de Uberlândia (UFU): R$ 47,35 bilhões em isenções federais ao setor mineral entre 2017 e 2024, contra R$ 46,1 bilhões arrecadados pela Compensação Financeira pela Exploração Mineral (CFEM), os royalties da mineração.</p>
 <p>É para essa lacuna do processamento local que também aponta a Lei 15.506, sancionada em 16 de setembro de 2026 a partir do Projeto de Lei 2.780/2024, do deputado federal Zé Silva (UNIÃO-MG), que instituiu a Política Nacional de Minerais Críticos e Estratégicos. O texto trata a agregação de valor em território nacional como princípio e prevê crédito fiscal proporcional ao valor agregado, mas deixa para um regulamento os critérios do que conta como agregação.</p>
 <p>A lei não proíbe a exportação de minério ou de concentrado nem obriga o processamento no país, mas prevê que o regulamento poderá condicionar exportações a compromissos de agregação de valor.</p>
